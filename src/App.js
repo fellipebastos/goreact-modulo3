@@ -3,11 +3,14 @@ import { Provider } from 'react-redux';
 
 import store from './store';
 
+// Components
+import TodoList from './TodoList';
+
 function App() {
   return (
     <div className="App">
       <Provider store={store}>
-        <h1>Hello Word</h1>
+        <TodoList />
       </Provider>
     </div>
   );
