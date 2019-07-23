@@ -4,15 +4,13 @@ import './config/ReactotronConfig';
 import { Provider } from 'react-redux';
 
 import store from './store';
-
-// Components
-import TodoList from './TodoList';
+import Routes from './routes';
 
 function App() {
   return (
     <div className="App">
       <Provider store={store}>
-        <TodoList />
+        <Routes />
       </Provider>
     </div>
   );
